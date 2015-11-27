@@ -14,7 +14,6 @@ var dir = {
     sourceDir: './',
     source: ['*.js', '!gulpfile.js', '!main.js', '!copyTask.js'],
     lib: ['node_modules/systemjs/dist/system.*',
-          'node_modules/gulp-babel/node_modules/babel-core/browser-polyfill.*',
           'bower_components/**/*'
          ],
     libOut: './dist/libs',
