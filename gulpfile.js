@@ -5,6 +5,7 @@ var gulp = require('gulp');
 var runSeq = require('run-sequence');
 var del = require('del');
 var wiredep = require('wiredep').stream;
+var package = require('./package.json');
 
 console.log($);
 
@@ -90,10 +91,22 @@ gulp.task('build-dev', function(cb) {
     runSeq('clean-build', ['compileApp', 'bower', 'scss'], cb);
 });
 
-/* Build and copy files to outside directory */
+/* Build and copy files to outside directory
+   This is great for exporting to github pages, for example.
+
+   To commit and push this content, try the following.
+
+   # gulp export
+   # cd ../<package-name>-export
+   # git init
+   # git checkout --orphan gh-pages
+   # git add . && git commit -m "."
+   # git remote add origin <github-repo-url>
+   # git push -u origin gh-pages
+*/
 gulp.task('export', ['build-dev'], function() {
     gulp.src(dir.build + '/**/*')
-        .pipe(gulp.dest('../phaserdemo-build'));
+        .pipe(gulp.dest('../' + package.name + '-export'));
 });
 
 gulp.task('default', function(cb) {
