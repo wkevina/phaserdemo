@@ -1,0 +1,11 @@
+#*#
+.#*#
+**/#*#
+**/.#*
+node_modules/
+bower_components/
+dist/
+scss/build.scss
+img/icon.png
+*.sublime-project
+*.sublime-workspace
