@@ -17,7 +17,7 @@ var dir = {
           'bower_components/**/*'
          ],
     libOut: './dist/libs',
-    img: './img/**/*.svg',
+    img: './img/**/*',
     imgOut: './dist/img/',
     css: './css/*',
     cssOut: './dist/css',

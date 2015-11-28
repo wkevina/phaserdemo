@@ -1,0 +1,20 @@
+{
+    "frames": {
+	"body.png": {
+	    "frame": {"x":0, "y":0, "w":109, "h":244},
+	    "spriteSourceSize": {"x":0,"y":0,"w":109,"h":244},
+	    "sourceSize": {"w":109,"h":244}
+	},
+	"turret.png": {
+	    "frame": {"x":110, "y":0, "w":79, "h":171},
+	    "spriteSourceSize": {"x":0,"y":0,"w":79,"h":171},
+	    "sourceSize": {"w":79,"h":171}
+	}
+
+    },
+    "meta": {
+	"image": "sprites.png",
+	"size": {"w": 190, "h": 245},
+	"scale": "1"
+    }
+}
