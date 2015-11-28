@@ -46,7 +46,7 @@ gulp.task('compileApp', function() {
 
     var babelOptions = {
         presets: ['es2015'],
-        plugins: ['transform-es2015-modules-systemjs', 'transform-runtime'],
+        plugins: ['transform-es2015-modules-systemjs'],
         moduleIds: true//,
         //keepModuleIdExtensions: true
     };
